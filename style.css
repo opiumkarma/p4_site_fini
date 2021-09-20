@@ -1040,8 +1040,17 @@ h4 {
         text-align: center;
     }
 }
-body:focus
+/*body:focus
 {
     background: rgb(184, 182, 182);
     color: #8A330A;
+}*/
+button:focus-visible
+{
+    outline: 4px dashed #8A330A;
+}
+button:focus:not(:focus-visible)
+{
+    outline: none;
+    box-shadow: 1px 1px 5px black;
 }
